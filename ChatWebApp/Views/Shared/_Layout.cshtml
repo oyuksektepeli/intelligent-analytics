@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title - Contoso Hotels Chatroom - provided by Concierge Plus</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <script type="text/javascript">
+        if (!com) var com = {};
+        if (!com.contoso) com.contoso = {};
+        com.contoso.concierge = { findUniqueSearchUsers: null, addUserIfNeeded: null, getAvatarColor: null }
+    </script>
+
+</head>
+<body>
+    <div id="wrap" class="grayGradient">
+        <div class="navbar navbar-info navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="@Url.Action("Index", "Home", new {area = ""})" class="navbar-brand">
+                        <h4>Concierge<sup>+</sup></h4></a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("Search", "Search", "Home")</li>
+                        <li>@Html.ActionLink("Bot", "Bot", "Home")</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        @RenderSection("hero", required: false)
+
+        <div id="main">
+            <div class="container body-content">
+                @RenderBody()
+            </div>
+        </div>
+
+    </div>
+    <footer role="contentinfo" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    &copy; @DateTime.Now.Year | Concierge<sup>+</sup>, all rights reserved
+                </div>
+                <div class="col-md-4">
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/searchClient")
+    @Scripts.Render("~/bundles/chatClient")
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

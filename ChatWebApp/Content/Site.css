@@ -1,0 +1,235 @@
+﻿html,body{
+    height: 100%
+}
+
+body {
+    padding-top: 60px;
+    font-family: "Segoe UI Local","Segoe WP","Segoe UI Web",Tahoma,"Helvetica Neue",Helvetica,"Meiryo UI",Meiryo,Arial Unicode MS,sans-serif;
+}
+
+.grayGradient {
+    background: #e4eef2;
+}
+
+@media (max-width: 1199px) {
+    body { padding-top: 50px; }
+}
+
+@media only screen and (min-width: 768px) {
+    .grayGradient {
+        background: #e4eef2;
+        color: #333534;
+        background-image: linear-gradient(#fff, #e4eef2 300px, #e4eef2 100%);
+    }
+    .navbar-nav > li > a {
+        padding-bottom: 16px;
+        padding-top: 22px;
+    }
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.hero-unit {
+  background-image:url('../images/hotel-lobby.jpg');
+  background-size:cover;
+  height:300px;
+}
+
+.panel.panel-transparent {
+    -webkit-box-shadow: none;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    box-shadow: none;
+}
+
+.panel.panel-transparent .panel-body.bg-white {
+    -webkit-box-shadow: none;
+    background: rgba(255, 255, 255, 0.6) !important;
+    border: none;
+    box-shadow: none;
+}
+
+.panel.panel-transparent .panel-body.bg-dark {
+    -webkit-box-shadow: none;
+    background: rgba(0, 0, 0, 0.6) !important;
+    color: #fff;
+    border: none;
+    box-shadow: none;
+}
+
+.panel.panel-transparent .panel-content {
+    padding: 0;
+}
+
+.panel-primary > .panel-heading {
+    background-color: #007099;
+}
+
+.btn-info {
+    background-color: #00aff0;
+}
+
+.btn-info:hover {
+    background-color: #007099;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Icons */
+.material-icons.md-18 {
+    font-size: 18px;
+}
+
+.material-icons.md-24 {
+    font-size: 24px;
+}
+
+.material-icons.md-36 {
+    font-size: 36px;
+}
+
+.material-icons.md-48 {
+    font-size: 48px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+/*input,
+select,
+textarea {
+    max-width: 280px;
+}*/
+
+#input .inputs {
+    width: 80%;
+}
+
+.panel-title-large {
+    font-size: 24px;
+}
+
+span.send-date {
+    font-size: smaller;
+    color: deepskyblue;
+}
+
+span.sender-name {
+    font-size: smaller;
+    color: darkcyan;
+}
+
+span.message {
+    font-size: larger;
+}
+
+.navbar-info {
+    background-color: #00aff0;
+    color: #fff;
+    border-bottom: solid 6px #007099;
+}
+
+.navbar-info a, .navbar-info a:visited, .navbar-info a:active {
+    color: #fff;
+    font-size: 16px;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: #007099;
+}
+
+.navbar-info .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+
+#wrap
+{
+    min-height: 100%;
+}
+
+#main
+{
+    overflow: auto;
+    padding-bottom: 60px; /* this needs to be bigger than footer height */
+}
+
+footer {
+    background: #007099;
+    color: #fff;
+    border-top: solid 6px #00aff0;
+    position: relative;
+    margin-top: -60px; /* negative value of footer height */
+    height: 60px;
+    clear: both;
+    padding-top: 20px;
+    color: #fff;
+}
+
+    footer div.container {
+        /*padding: 25px 0 0 0;*/
+    }
+
+/* Chat styles */
+#chatPanel {
+    display: none;
+}
+
+.chatBubbleOtherUser {
+    text-align: left;
+}
+
+.chatBubbleMe {
+    text-align: left;
+}
+
+.chat {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.chat li {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #B3A9A9;
+}
+
+.chat li.left .chat-body {
+    margin-left: 60px;
+}
+
+.chat li.right .chat-body {
+    margin-right: 60px;
+}
+
+.chat li .chat-body p {
+    margin: 0;
+    color: #777777;
+}
+
+.chat li.left .chat-body p {
+    text-align: left;
+}
+
+.chat li.right .chat-body p {
+    text-align: right;
+}
+
+.chat li .header > small.text-muted > i {
+    vertical-align: middle !important;
+}
+
+/* Search result styles */
+.search-empty { display: none; }
+
+span.hit {
+    font-weight: bold;
+    background-color: palegoldenrod;
+}

@@ -1,0 +1,61 @@
+﻿@{
+    ViewBag.Title = "Search";
+}
+
+<div class="row"><p><h2>&nbsp;</h2></p></div>
+
+<div class="row">
+    <div class="col-md-4">
+
+        <div class="bs-component">
+
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title panel-title-large">
+                        <span class="glyphicon glyphicon-search"></span>&nbsp;&nbsp; Search Messages
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label for="searchText" class="control-label">Search messages for</label>
+                        <div class="input-group">
+                            <input id="searchText" type="text" class="form-control" value="">
+                            <span class="input-group-btn">
+                                <button type="submit" id="btnSendSearch" class="btn btn-info">
+                                    <span class="glyphicon glyphicon-search"></span>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="search-results col-md-6"></div>
+    </div>
+    <div class="col-md-6 search-empty">
+        <div class="alert alert-warning">
+            <h4>Sorry, couldn't find anything</h4>
+
+            <p>
+                We've tried our best, but we still haven't found what you're looking for. It is possible that the word or phrase you were
+                searching has not yet been indexed. We update the index approximately <strong>every 5 minutes</strong>. So, hang tight,
+                we just might find it if you try again later.
+            </p>
+        </div>
+        <p>Perhaps try searching for a word like <strong>chat</strong></p>
+    </div>
+</div>
+
+<div class="row"><p>&nbsp;</p></div>
+
+<script>
+    //This global is used to pass the configuration setting to searchClient.js.
+    var chatSearchApiBase = "@System.Configuration.ConfigurationManager.AppSettings["chatSearchApiBase"]";
+</script>

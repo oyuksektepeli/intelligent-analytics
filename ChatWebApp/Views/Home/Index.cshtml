@@ -1,0 +1,107 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@section hero {
+    <div class="hero-unit">
+        <div class="container">
+            <div class="col-md-6">
+                <p>&nbsp;</p>
+                <div class="panel panel-transparent no-bd">
+                    <div class="panel-body bg-dark">
+                        <h1>Contoso Hotels</h1>
+                        <p class="lead">Welcome to the Contoso Hotels.</p>
+                        <p>Please use our in-house chat system to stay in touch with us during your stay.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<div class="row"><p>&nbsp;</p></div>
+
+<div class="row" id="joinChatPanel">
+    <div class="col-md-4">
+        <div class="bs-component">
+
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title panel-title-large">
+                        <span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp; Join Chat
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group is-empty">
+                        <div class="input-group">
+                            <label for="username" class="control-label">Enter your username</label>
+                            <input type="text" id="username" value="guest" class="form-control" />
+                            <p class="help-block">
+                                Enter your name as you would like it to appear on the chat room.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="form-group is-empty">
+                        <div class="input-group">
+                            <label for="listChatRooms" class="control-label">With whom would you like to chat?</label>
+                            <select id="listChatRooms" class="form-control">
+                                <option value="hotellobby">Hotel Lobby</option>
+                                 
+                            </select>
+                        </div>
+                    </div>
+
+                    <input type="button" id="btnJoin" class="btn btn-raised" value="Join" />
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="row" id="chatPanel">
+
+    <div class="col-md-12">
+        <h2 id="chat-room"></h2>
+
+        <div class="col-md-6">
+            <div class="bs-component">
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title panel-title-large">
+                            <span class="glyphicon glyphicon-comment"></span>&nbsp;&nbsp; Live Chat
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <div id="divHistory"></div>
+                        <ul class="chat"></ul>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button type="submit" id="btnListen" class="btn btn-fab btn-fab-mini btn-info">
+                                    <span class="fa fa-microphone"></span>
+                                </button>
+                            </span>
+                            <input id="txtMsg" type="text" class="form-control" placeholder="Type your message here...">
+                            <span class="input-group-btn">
+                                <button type="submit" id="btnSend" class="btn btn-fab btn-fab-mini btn-info">
+                                    <span class="glyphicon glyphicon-send"></span>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <input type="button" id="btnLeave" class="btn btn-raised btn-danger" value="Leave Chat" />
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="row"><p>&nbsp;</p></div>
