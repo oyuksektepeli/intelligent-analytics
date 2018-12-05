@@ -2,7 +2,7 @@
 $(document).ready(function () {
 
     //TODO: Enter your Speech API Key here
-    var speechApiKey = "5489cc2130e84e5cbea152252c8fef8c";
+    var speechApiKey = "adb3809eee484bf5a1ed48fbf45e99b8";
 
 
     var sessionId = "";
