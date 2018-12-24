@@ -301,7 +301,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <None Include="packages.config" />
-    <None Include="Properties\PublishProfiles\conciergepluschatapp12345 - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\conciergepluschatapp01 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\ai.1.0.7-build00691.js" />
     <Content Include="Scripts\ai.1.0.7-build00691.min.js" />
